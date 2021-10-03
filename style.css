@@ -1,0 +1,44 @@
+html {
+    font-family: "Metropolis Bold", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    height: 78px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1600px;
+    height: 100%;
+}
+
+header img{
+    max-height: 35px;
+}
+
+.header-content > nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+nav > a {
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+nav > a:hover{
+    color: rgb(254,68,0);
+}
