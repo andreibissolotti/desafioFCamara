@@ -1,0 +1,37 @@
+html {
+    font-family: "Metropolis Bold", sans-serif;
+    background-color: #ef653c;
+}
+
+body{
+    color: white;
+}
+
+h1 {
+    padding: 0.5rem;
+    margin: 0;
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+}
+
+.fechar{
+    position: absolute;
+    top: 9rem;
+    right: 9rem;
+    color: white;
+    background-color: #4b4fa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.fechar:hover{
+    box-shadow: 0 0 6px #353871;
+}
