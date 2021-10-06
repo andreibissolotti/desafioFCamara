@@ -25,6 +25,7 @@ header{
     margin: auto;
     max-width: 1120px;
     height: 100%;
+    padding: 0 2rem;
 }
 
 header img{
@@ -63,7 +64,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -73,14 +73,33 @@ main {
     font-weight: 900;
 }
 
-.estamosVoltando p{
+.estamosVoltando p, .agendamentos p{
     text-align: justify;
     max-width: 75%;
+    margin: .5rem;
 }
 
 .agendamentos{
-    background-color: #FE4400;
+    background-color: #EF653C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 2rem;
 }
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+
+.texto h2, .texto p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .escritorios{
     background-color: #F3F4F9;
@@ -88,6 +107,14 @@ main {
     flex-direction: column;
     text-align: center;
     padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.escritorios p{
+    max-width: 75%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: justify;
 }
 
 .mapas{
@@ -98,13 +125,28 @@ main {
 }
 
 iframe {
-    border-radius: 50px;
-    border: 3px solid #333333;
-    box-shadow: 0 0 .5em #606061;
+    border: solid 1px #606065;
 }
 
 .cuidados{
     background-color: #4B4FA1;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.cuidados p{
+    text-align: justify;
+    max-width: 100%;
+    margin: .5rem;
+}
+
+.listaCuidados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer{
@@ -117,6 +159,7 @@ footer{
     height: auto;
     position: relative;
     bottom: 0;
+    flex-wrap: wrap;
 }
 
 .creditos {
