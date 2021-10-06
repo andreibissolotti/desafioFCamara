@@ -1,16 +1,21 @@
 html {
     font-family: "Metropolis Bold", sans-serif;
+    height: 100%;
 }
 
 body {
     margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header{
     height: 78px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    position: sticky;
+    position: fixed;
 }
 
 .header-content{
@@ -45,13 +50,72 @@ nav > a:hover{
     color: rgb(254,68,0);
 }
 
+main {
+    margin-top: 80px;
+}
 
+.negrito{
+    font-weight: 750;
+    color: #FE4400;
+}
+
+.estamosVoltando{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.estamosVoltando h1{
+    text-align: center;
+    color: #FE4400;
+    font-weight: 900;
+}
+
+.estamosVoltando p{
+    text-align: justify;
+    max-width: 75%;
+}
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #303033;
     color: white;
-    position: absolute;
     width: 100%;
-    height: 5rem;
+    height: auto;
+    position: relative;
     bottom: 0;
 }
+
+.creditos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: .5rem;
+    margin: 1rem 0;
+    margin-left: 1rem;
+}
+
+.aviso{
+    margin-right: 1rem;
+}
+
+.creditos p{
+    padding: 0;
+    margin: 0;
+}
+
+.creditos a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
