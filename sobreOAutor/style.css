@@ -15,17 +15,25 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    height: 100%;
-    gap: 54rem;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    gap: 3rem;
 }
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10rem;
-    max-width: 75%;
+    width: 75%;
     text-align: justify;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.text{
+    max-width: 32rem;
+    font-weight: 600;
 }
 
 h1 {
