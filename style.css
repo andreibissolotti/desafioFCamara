@@ -13,7 +13,7 @@ body {
 
 header{
     height: 78px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(255, 255, 255);
     position: fixed;
 }
@@ -22,6 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 1120px;
     height: 100%;
@@ -89,6 +90,10 @@ main {
     margin-top: 2rem;
 }
 
+.agendamentos img, .cuidados img{
+    max-width: 25vw;
+}
+
 .texto {
     display: flex;
     flex-direction: column;
@@ -125,7 +130,8 @@ main {
 }
 
 iframe {
-    border: solid 1px #606065;
+    border: solid 1px rgb(96, 96, 101);
+    max-width: 75vw;
 }
 
 .cuidados{
@@ -147,6 +153,27 @@ iframe {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 2rem;
+    margin: .5rem auto;
+}
+
+.listaCuidados>div{
+    background-color: #EF653C;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 100%;
+    height: 5rem;
+    width: 5rem;
+    font-size: .8em;
+}
+
+.listaCuidados span{
+    font-size: 2em;
 }
 
 footer{
